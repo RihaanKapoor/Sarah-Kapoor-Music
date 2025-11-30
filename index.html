@@ -1,116 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sarah Kapoor – Artist Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #DE8ECA; color: #fff; scroll-behavior: smooth; }
-    header { text-align: center; padding: 80px 20px; }
-    header h1 { font-size: 3.5rem; margin-bottom: 10px; }
-    .hero-img {
-      width: 180px; height: 180px; border-radius: 50%;
-      object-fit: cover;
-      margin: 20px auto;
-      border: 4px solid rgba(255,255,255,0.6);
-    }
-    nav { text-align: center; margin-top: 30px; }
-    nav a {
-      margin: 0 8px;
-      padding: 10px 22px;
-      background: #F0B1DC;
-      border-radius: 25px;
-      color: #4d004d;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s, transform 0.3s;
-    }
-    nav a:hover { background: #ffffff55; transform: scale(1.05); }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sarah Kapoor – Artist Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    section { max-width: 900px; margin: 50px auto; padding: 25px; background: rgba(255,255,255,0.1); border-radius: 15px; }
-    section h2 { text-align: center; margin-bottom: 20px; }
-    .spotify-embed, .youtube-embed { margin: 20px auto; border-radius: 12px; overflow: hidden; }
-    iframe { width: 100%; border: 0; }
-    .concert { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 12px; text-align: center; }
-    .socials { text-align: center; margin-top: 30px; }
-    .socials a {
-      margin: 0 10px; padding: 10px 14px; background: #F0B1DC;
-      border-radius: 12px; color: #4d004d; font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .socials a:hover { background: #ffffff55; }
-    footer { text-align: center; margin: 50px 0; opacity: 0.8; }
-  </style>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+
+    /* ▼ LAVENDER COLORS ▼ */
+    background: linear-gradient(135deg, #de8eca, #eab3da, #f5d9ea);
+    animation: lavenderShift 12s infinite alternate;
+  }
+
+  @keyframes lavenderShift {
+    0%   { background: linear-gradient(135deg, #de8eca, #eab3da, #f5d9ea); }
+    50%  { background: linear-gradient(135deg, #eab3da, #f5d9ea, #de8eca); }
+    100% { background: linear-gradient(135deg, #f5d9ea, #de8eca, #eab3da); }
+  }
+
+  header { text-align:center; padding: 100px 20px 60px; }
+  header h1 { font-size:4rem; text-shadow:0 0 15px rgba(255,255,255,0.6); }
+  header p { opacity:0.9; font-size:1.3rem; }
+
+  .hero-img {
+    width:180px; height:180px; border-radius:50%;
+    object-fit:cover;
+    margin:20px auto;
+    border:4px solid rgba(255,255,255,0.6);
+  }
+
+  nav { margin-top:30px; }
+  nav a {
+    display:inline-block;
+    margin:8px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#f5d9ea;
+    color:#5a2d52;
+    font-weight:600;
+    text-decoration:none;
+    box-shadow:0 0 12px rgba(255,255,255,0.5);
+    transition:0.3s;
+  }
+  nav a:hover { transform:scale(1.07); background:#ffffffaa; }
+
+  section {
+    max-width:1000px;
+    background:rgba(255,255,255,0.12);
+    padding:30px;
+    margin:60px auto;
+    border-radius:18px;
+    backdrop-filter:blur(6px);
+  }
+
+  section h2 {
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:20px;
+    text-shadow:0 0 10px rgba(255,255,255,0.4);
+  }
+
+  .concert {
+    text-align:center;
+    padding:25px;
+    background:rgba(255,255,255,0.25);
+    border-radius:15px;
+    font-size:1.3rem;
+  }
+
+  .spotify-embed, .youtube-embed {
+    margin:20px auto;
+    border-radius:12px;
+    overflow:hidden;
+  }
+
+  iframe { width:100%; border:0; }
+
+  .socials { text-align:center; margin-top:30px; }
+  .socials a {
+    background:#f5d9ea;
+    color:#5a2d52;
+    padding:10px 15px;
+    margin:0 8px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+  }
+  .socials a:hover { background:#ffffffaa; }
+
+  footer { text-align:center; margin:50px 0; opacity:0.8; }
+
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Sarah Kapoor</h1>
-    <p>Pop / Singer‑Songwriter</p>
-    <img class="hero-img" src="https://placehold.co/180x180/png?text=Artist+Photo" alt="Artist photo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#concert">Concert</a>
-      <a href="#music">Music</a>
-      <a href="#videos">Videos</a>
-      <a href="#socials">Connect</a>
-    </nav>
-  </header>
+<header>
+  <h1>Sarah Kapoor</h1>
+  <p>Pop • Singer-Songwriter</p>
+  <img class="hero-img" src="https://placehold.co/180x180/png?text=Artist+Photo" alt="Sarah Kapoor">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#concert">Concert</a>
+    <a href="#music">Music</a>
+    <a href="#videos">Videos</a>
+    <a href="#socials">Connect</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Sarah Kapoor is a rising pop singer‑songwriter blending emotional storytelling with melodic vocals. She’s released songs like Fairytale, Silence, and Million.</p>
-  </section>
+<section id="about">
+  <h2>About Sarah</h2>
+  <p>Sarah Kapoor is a rising pop singer-songwriter known for emotional melodies and vivid storytelling. Her songs include “Fairytale,” “Silence,” and “Million.”</p>
+</section>
 
-  <section id="concert">
-    <h2>Upcoming Concert</h2>
-    <div class="concert">
-      🎤 December 5, 2025 — Live Performance (Location TBA) 🎶
-    </div>
-  </section>
+<section id="concert">
+  <h2>Upcoming Concert</h2>
+  <div class="concert">🎤 Live Concert – December 5, 2025 (Location TBA)</div>
+</section>
 
-  <section id="music">
-    <h2>Featured Songs</h2>
-    <div class="spotify-embed">
-      <p><strong>Fairytale</strong></p>
-      <iframe src="https://open.spotify.com/embed/track/5wlNdkdM5SAic1iVQ620nu" height="152" allow="encrypted-media"></iframe>
-    </div>
+<section id="music">
+  <h2>Music</h2>
 
-    <div class="spotify-embed">
-      <p><strong>Silence</strong></p>
-      <iframe src="https://open.spotify.com/embed/album/1LXu3VfIu6kWZ2w0VEFdtz" height="352" allow="encrypted-media"></iframe>
-    </div>
+  <div class="spotify-embed">
+    <p><strong>Fairytale</strong></p>
+    <iframe src="https://open.spotify.com/embed/track/5wlNdkdM5SAic1iVQ620nu" height="152"></iframe>
+  </div>
 
-    <div class="spotify-embed">
-      <p><strong>Million</strong></p>
-      <iframe src="https://open.spotify.com/embed/track/7d8pwFuuyYuTvoaMEID9BV" height="152" allow="encrypted-media"></iframe>
-    </div>
-  </section>
+  <div class="spotify-embed">
+    <p><strong>Silence</strong></p>
+    <iframe src="https://open.spotify.com/embed/album/1LXu3VfIu6kWZ2w0VEFdtz" height="352"></iframe>
+  </div>
 
-  <section id="videos">
-    <h2>YouTube Videos</h2>
-    <div class="youtube-embed">
-      <!-- Example YouTube video embed: replace VIDEO_ID with the real one -->
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" height="315" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-    <!-- If channel wants a playlist or uploads feed, better embed a specific video or playlist rather than channel page -->
-  </section>
+  <div class="spotify-embed">
+    <p><strong>Million</strong></p>
+    <iframe src="https://open.spotify.com/embed/track/7d8pwFuuyYuTvoaMEID9BV" height="152"></iframe>
+  </div>
+</section>
 
-  <section id="socials">
-    <h2>Connect</h2>
-    <div class="socials">
-      <a href="https://www.instagram.com/_sarah_kapoor/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@sarahkapoormusic" target="_blank">YouTube</a>
-      <a href="https://linktr.ee/sarahkapoor?utm_source=linktree_profile_share" target="_blank">More links</a>
-    </div>
-  </section>
+<section id="videos">
+  <h2>Videos</h2>
+  <div class="youtube-embed">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" height="315"></iframe>
+  </div>
+</section>
 
-  <footer>
-    © 2025 Sarah Kapoor — All Rights Reserved
-  </footer>
+<section id="socials">
+  <h2>Connect</h2>
+  <div class="socials">
+    <a href="https://www.instagram.com/_sarah_kapoor/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@sarahkapoormusic" target="_blank">YouTube</a>
+    <a href="https://linktr.ee/sarahkapoor" target="_blank">Linktree</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Sarah Kapoor — All Rights Reserved
+</footer>
 
 </body>
 </html>
