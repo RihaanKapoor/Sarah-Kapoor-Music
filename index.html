@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sarah Kapoor – Official Artist Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #3a0000; color: #fff; scroll-behavior: smooth; }
-    a { text-decoration: none; color: inherit; }
-    header {
-      background: linear-gradient(135deg, #3a0000, #8b0000, #ff1a1a);
-      text-align: center;
-      padding: 100px 20px 60px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    header h1 { font-size: 4rem; margin-bottom: 15px; text-shadow: 0 0 15px rgba(255,0,0,0.8); }
-    header p { font-size: 1.3rem; opacity: 0.9; }
-    .hero-img {
-      width: 180px; height: 180px; border-radius: 50%; margin: 20px auto 0 auto;
-      border: 4px solid rgba(255,255,255,0.5);
-      object-fit: cover;
-    }
-    nav { text-align: center; margin-top: 30px; }
-    nav a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 25px;
-      border-radius: 30px;
-      background: #b30000;
-      box-shadow: 0 0 12px rgba(255,0,0,0.7);
-      transition: all 0.3s;
-      font-weight: 600;
-    }
-    nav a:hover { background: #ff1a1a; transform: scale(1.05); }
-    section {
-      max-width: 1000px; margin: 60px auto; padding: 30px;
-      border-radius: 18px; background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(6px);
-    }
-    section h2 { font-size: 2.5rem; margin-bottom: 20px; text-align: center; text-shadow: 0 0 10px rgba(255,0,0,0.7); }
-    section p { font-size: 1.1rem; line-height: 1.6; text-align: center; margin-bottom: 20px; }
-    .spotify-embed { margin: 20px auto; border-radius: 12px; }
-    .concert { background: rgba(255,0,0,0.3); padding: 25px; border-radius: 15px; text-align: center; font-size: 1.3rem; box-shadow: 0 0 15px rgba(255,0,0,0.7); }
-    .socials { text-align: center; margin-top: 30px; }
-    .socials a {
-      display: inline-block; margin: 0 10px; padding: 10px 15px;
-      border-radius: 12px; background: #b30000; box-shadow: 0 0 10px rgba(255,0,0,0.7);
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .socials a:hover { background: #ff1a1a; transform: scale(1.1); }
-    footer { text-align: center; margin: 50px 0; opacity: 0.8; font-size: 0.9rem; }
-    @media(max-width:768px) {
-      header h1 { font-size: 3rem; }
-      section h2 { font-size: 2rem; }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sarah Kapoor – Artist Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #DE8ECA, #E3A6D4, #F0C1E8);
+    animation: bgShift 12s infinite alternate;
+  }
+
+  @keyframes bgShift {
+    0% { background: linear-gradient(135deg, #DE8ECA, #E3A6D4, #F0C1E8); }
+    50% { background: linear-gradient(135deg, #F0C1E8, #E3A6D4, #DE8ECA); }
+    100% { background: linear-gradient(135deg, #E3A6D4, #DE8ECA, #F0C1E8); }
+  }
+
+  header {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+  }
+  header h1 { font-size:4rem; margin-bottom:15px; text-shadow:0 0 15px rgba(222,142,202,0.8); }
+  header p { font-size:1.3rem; opacity:0.9; }
+
+  .hero-img {
+    width:180px; height:180px; border-radius:50%; margin:20px auto 0;
+    border:4px solid rgba(255,255,255,0.5);
+    object-fit:cover;
+  }
+
+  nav { text-align:center; margin-top:30px; }
+  nav a {
+    display:inline-block; margin:8px; padding:12px 25px;
+    border-radius:30px; background:#E3A6D4;
+    box-shadow:0 0 12px rgba(222,142,202,0.7);
+    transition:all 0.3s; font-weight:600;
+  }
+  nav a:hover { background:#F0C1E8; color:#7a3a7a; transform:scale(1.05); }
+
+  section {
+    max-width:1000px; margin:60px auto; padding:30px;
+    border-radius:18px; background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+  }
+  section h2 { font-size:2.5rem; margin-bottom:20px; text-align:center; text-shadow:0 0 10px rgba(222,142,202,0.7); }
+  section p { font-size:1.1rem; line-height:1.6; text-align:center; margin-bottom:20px; }
+  .spotify-embed { margin:20px auto; border-radius:12px; }
+  .concert { background: rgba(222,142,202,0.3); padding:25px; border-radius:15px; text-align:center; font-size:1.3rem; box-shadow:0 0 15px rgba(222,142,202,0.7); }
+
+  .socials { text-align:center; margin-top:30px; }
+  .socials a {
+    display:inline-block; margin:0 10px; padding:10px 15px;
+    border-radius:12px; background:#E3A6D4; box-shadow:0 0 10px rgba(222,142,202,0.7);
+    font-weight:600; transition:0.3s;
+  }
+  .socials a:hover { background:#F0C1E8; color:#7a3a7a; transform:scale(1.1); }
+
+  footer { text-align:center; margin:50px 0; opacity:0.8; font-size:0.9rem; }
+
+  @media(max-width:768px) {
+    header h1 { font-size:3rem; }
+    section h2 { font-size:2rem; }
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Sarah Kapoor</h1>
-    <p>Official Artist Page – Pop / Singer‑Songwriter</p>
-    <!-- Use her public profile picture here -->
-    <img class="hero-img" src="https://www.instagram.com/_sarah_kapoor/profile_pic" alt="Sarah Kapoor">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#concert">Concert</a>
-      <a href="#music">Music</a>
-      <a href="#socials">Connect</a>
-    </nav>
-  </header>
+<header>
+  <h1>Sarah Kapoor</h1>
+  <p>Official Artist Page – Pop / Singer‑Songwriter</p>
+  <img class="hero-img" src="https://placehold.co/180x180/png?text=Artist+Photo" alt="Sarah Kapoor">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#concert">Concert</a>
+    <a href="#music">Music</a>
+    <a href="#socials">Connect</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Sarah Kapoor</h2>
-    <p>Sarah Kapoor is a rising pop singer-songwriter blending emotional storytelling with smooth, melodic vocals. She has released hits such as <strong>Fairytale</strong>, <strong>Silence</strong>, and <strong>Million</strong>.</p>
-  </section>
+<section id="about">
+  <h2>About Sarah Kapoor</h2>
+  <p>Sarah Kapoor is a rising pop singer-songwriter blending emotional storytelling with melodic vocals. She has released songs including <strong>Fairytale</strong>, <strong>Silence</strong>, and <strong>Million</strong>.</p>
+</section>
 
-  <section id="concert">
-    <h2>Upcoming Concert</h2>
-    <div class="concert">
-      🎤 Live Performance: December 5, 2025<br>
-      Location: To Be Announced — stay tuned! 🎶
-    </div>
-  </section>
+<section id="concert">
+  <h2>Upcoming Concert</h2>
+  <div class="concert">
+    🎤 Live Performance: December 5, 2025<br>
+    Location: To Be Announced — stay tuned! 🎶
+  </div>
+</section>
 
-  <section id="music">
-    <h2>Featured Songs</h2>
+<section id="music">
+  <h2>Featured Songs</h2>
+  <div class="spotify-embed">
+    <p><strong>Fairytale</strong></p>
+    <iframe src="https://open.spotify.com/embed/track/5wlNdkdM5SAic1iVQ620nu" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+  </div>
+  <div class="spotify-embed">
+    <p><strong>Silence</strong></p>
+    <iframe src="https://open.spotify.com/embed/album/1LXu3VfIu6kWZ2w0VEFdtz" width="100%" height="352" frameborder="0" allow="encrypted-media"></iframe>
+  </div>
+  <div class="spotify-embed">
+    <p><strong>Million</strong></p>
+    <iframe src="https://open.spotify.com/embed/track/7d8pwFuuyYuTvoaMEID9BV" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+  </div>
+</section>
 
-    <div class="spotify-embed">
-      <p><strong>Fairytale</strong></p>
-      <iframe src="https://open.spotify.com/embed/track/5wlNdkdM5SAic1iVQ620nu" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-    </div>
+<section id="socials">
+  <h2>Connect with Sarah</h2>
+  <div class="socials">
+    <a href="https://www.instagram.com/_sarah_kapoor/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@sarahkapoormusic" target="_blank">YouTube</a>
+    <a href="https://linktr.ee/sarahkapoor?utm_source=linktree_profile_share" target="_blank">Linktree / More</a>
+  </div>
+</section>
 
-    <div class="spotify-embed">
-      <p><strong>Silence</strong></p>
-      <iframe src="https://open.spotify.com/embed/album/1LXu3VfIu6kWZ2w0VEFdtz" width="100%" height="352" frameborder="0" allow="encrypted-media"></iframe>
-    </div>
-
-    <div class="spotify-embed">
-      <p><strong>Million</strong></p>
-      <iframe src="https://open.spotify.com/embed/track/7d8pwFuuyYuTvoaMEID9BV" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-    </div>
-  </section>
-
-  <section id="socials">
-    <h2>Connect with Sarah</h2>
-    <div class="socials">
-      <a href="https://www.instagram.com/_sarah_kapoor/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@sarahkapoormusic" target="_blank">YouTube</a>
-      <a href="https://linktr.ee/sarahkapoor?utm_source=linktree_profile_share" target="_blank">Linktree / More</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Sarah Kapoor — All Rights Reserved
-  </footer>
+<footer>
+  © 2025 Sarah Kapoor — All Rights Reserved
+</footer>
 
 </body>
 </html>
-
